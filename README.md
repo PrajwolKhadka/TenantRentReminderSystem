@@ -1,17 +1,13 @@
-# TenantRentReminderSystem
-This is a template for a comprehensive README.md file for your Tenant Rent Reminder System project. Since the project details were not fully available on the repository's main page, the assumed technology stack is Django (based on manage.py and directory names) and the features are inferred from the project's name.
+# TenantRentReminderSystem 🏠🗓️
 
-Please replace the bracketed placeholders (e.g., [YOUR PROJECT LINK]) with your actual information and customize the features and setup steps to match your project's exact implementation.
-
-TenantRentReminderSystem 🏠🗓️
 The Tenant Rent Reminder System is a robust and automated application designed to streamline the rent collection process for landlords and property managers. It helps in efficiently managing tenant records and ensuring timely rent payments by sending automated reminders before the due date.
 
 🌟 Features
 This system provides a centralized platform for property management tasks, focusing on minimizing administrative burden and improving cash flow.
 
-Tenant Management: A CRUD interface to easily add, view, update, and delete tenant records, including contact information, property details, and rent specifics.
+Tenant Management: A CRUD interface to easily add, view, update, and delete tenant records, including contact information and rent specifics.
 
-Automated Reminders: Schedule and send automated rent payment reminders to tenants via Email (or SMS/other notification service).
+Automated Reminders: Schedule and send automated rent payment reminders to tenants via Whatsapp.
 
 Payment Tracking: Mark rent payments as Paid or Unpaid to maintain an accurate payment history for each tenant.
 
@@ -81,9 +77,13 @@ Code snippet
 
 # Twilio Configuration in .env file
 TWILIO_ACCOUNT_SID=A****************8
+
 TWILIO_AUTH_TOKEN=e3aaaaaaaaaaaaaaaaaaa
+
 TWILIO_SANDBOX_NUMBER=whatsapp:+(countrycode)(number)
+
 PHONE_NUMBER=your phone number for esewa/khalti
+
 Run Migrations
 
 Apply the initial database schema:
