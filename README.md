@@ -28,11 +28,7 @@ Backend: Python
 
 Web Framework: Django (Inferred based on manage.py)
 
-Frontend: HTML5, CSS3, Bootstrap (for responsive design)
-
-Database: SQLite (Default for development) or PostgreSQL/MySQL (for production)
-
-Background Tasks: Celery (Highly likely for scheduling and sending reminders)
+Database: PostgreSQL/MySQL (for production)
 
 Whatsapp Services: Twilio (trial account)
 
@@ -57,7 +53,9 @@ cd TenantRentReminderSystem
 
 
 git clone https://github.com/PrajwolKhadka/TenantRentReminderSystem.git
+
 cd TenantRentReminderSystem
+
 Create a Virtual Environment
 
 It's highly recommended to use a virtual environment to manage dependencies:
@@ -65,25 +63,21 @@ It's highly recommended to use a virtual environment to manage dependencies:
 
 
 python -m venv venv
+
 source venv/bin/activate  # On macOS/Linux
+
 # venv\Scripts\activate  # On Windows
+
 Install Dependencies
 
-
-
 pip install -r requirements.txt
+
 Configure Environment Variables
 
 Create a file named .env in the root directory and add your secret keys and database/email configuration.
 
 Code snippet
 
-# .env example
-SECRET_KEY='your-django-secret-key'
-DEBUG=True
-
-# Database (using default SQLite for development)
-# If using PostgreSQL/MySQL, configure DATABASES settings in settings.py
 
 # Twilio Configuration in .env file
 TWILIO_ACCOUNT_SID=A****************8
@@ -97,6 +91,7 @@ Apply the initial database schema:
 
 
 python manage.py migrate
+
 Create a Superuser
 
 Create an administrator account to access the Django admin and the property management dashboard:
@@ -104,6 +99,7 @@ Create an administrator account to access the Django admin and the property mana
 
 
 python manage.py createsuperuser
+
 Run the Server
 
 Start the Django development server:
@@ -111,10 +107,13 @@ Start the Django development server:
 
 
 python manage.py runserver
+
 The application will now be running at http://127.0.0.1:8000/admin/.
 
 📝 Usage
+
 Adding Tenants
+
 Navigate to the Admin Panel (/admin) and log in with the superuser account.
 
 You can use the built-in Django Admin to add your initial tenants, or access the custom tenant creation page (e.g., /tenants/add).
