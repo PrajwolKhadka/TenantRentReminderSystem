@@ -34,7 +34,7 @@ Database: SQLite (Default for development) or PostgreSQL/MySQL (for production)
 
 Background Tasks: Celery (Highly likely for scheduling and sending reminders)
 
-Email Service: SMTP or third-party service like SendGrid/Mailgun (for email reminders)
+Whatsapp Services: Twilio (trial account)
 
 🚀 Getting Started
 Follow these steps to set up the project locally.
@@ -48,8 +48,11 @@ pip (Python package installer)
 
 Git
 
-Installation
-Clone the Repository
+Installation: 
+
+git clone https://github.com/PrajwolKhadka/TenantRentReminderSystem.git
+
+cd TenantRentReminderSystem
 
 
 
