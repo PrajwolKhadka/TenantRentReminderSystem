@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tenant List</title>
+</head>
+<body>
+    <h1>Tenant List</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Rent Amount</th>
+            <th>Due Day</th>
+            <th>Last Payment</th>
+        </tr>
+        {% for tenant in tenants %}
+        <tr>
+            <td>{{ tenant.name }}</td>
+            <td>{{ tenant.phone_number }}</td>
+            <td>{{ tenant.rent_amount }}</td>
+            <td>{{ tenant.due_day }}</td>
+            <td>{{ tenant.last_payment_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
