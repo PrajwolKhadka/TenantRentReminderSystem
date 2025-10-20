@@ -56,7 +56,7 @@ def send_due_reminders():
 #             print(f"Failed to send message: {e}")
 
 # Fort test only!!!!!!!!!!!
-# scheduler.add_job(send_due_reminders, 'interval', seconds=2)
+# scheduler.add_job(send_due_reminders, 'interval', seconds=40)
 
 #Production ko lagi, 6 hours interval ma msg pathauxa!!!!!!!!!!!
-scheduler.add_job(send_due_reminders, 'cron', hour='8,14,20', minute=30)
+# scheduler.add_job(send_due_reminders, 'cron', hour='8,14,20', minute=30)
